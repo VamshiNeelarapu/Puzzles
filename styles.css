@@ -1,0 +1,41 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding-top: 30px;
+}
+
+.image-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.image-container img,
+.image-container .text {
+  width: 300px;
+  height: 180px;
+  display: block;
+}
+
+.image-container .text {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  padding: 25%;
+  color: rgb(29, 36, 52);
+  font-style: oblique;
+  font-size: 24px;
+}
+
+.image-container.clicked img {
+  display: none;
+}
+
+.image-container.clicked .text {
+  display: block;
+}
+.bt {
+  margin-top: 40px;
+  text-align: center;
+}
